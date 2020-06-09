@@ -221,16 +221,22 @@ color: #FFFFFF;
     display:flex;
     flex-flow:row;
     justify-content: center;
+    justify-items: center;
+    text-align: center;
     margin-top:413px;
     height: 542px;
-    text-align:center;
+    
     background-image:linear-gradient( rgba(0, 0, 0, 0.69),rgba(0, 0, 0, 0.69)),url(../images/footer\ img.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .call-to-action h2{
-font-family: Poppins;
+margin-top:143px;
+margin-bottom:18px;
+width: 669px;
+height: 56px;
+font-family: "Poppins";
 font-style: normal;
 font-weight: 600;
 font-size: 36px;
@@ -243,8 +249,65 @@ color: #FFFFFF;
     font-weight: 500;
     font-size: 18px;
     width: 520px;
+    margin: 0 auto;
     height: 56px;
     line-height: 27px;
-    text-align: center;
     color: rgba(255, 255, 255, 0.73);
+    margin-bottom:50.54px;
+}
+.btn-footer{
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 27px;
+text-align: center;
+color: #FFFFFF;
+width: 212px;
+height: 75.09px;
+background: linear-gradient(180deg, #F8885A 0%, #EB4501 100%);
+}
+
+footer{
+    margin-top:58px;
+    padding:0 94px 34px 101px;
+}
+.footer-wrapper{
+    padding-top:32px;
+    border-top:2px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-flow:row;
+    justify-content: space-between;
+}
+#footer-home{
+font-weight: bold;
+font-size: 24px;
+line-height: 36px;
+color: #F8885A;
+}
+#copyright{
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+color: rgba(0, 0, 0, 0.5);
+}
+#footer-links ul{
+margin:0;
+padding:0;
+list-style-type: none;
+}
+#footer-links li{
+    display:inline-block;
+    margin-right:29.53px;
+    width:20px;
+    height:20px;
+    background: #F8885A;
+}
+#foot-links li:last-child{
+    margin-right:0;
+}
+#footer-links li a{
+    text-decoration: none;
+    display: block;
 }
