@@ -1,12 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Romania</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Romania</title>
 </head>
 <body>
-    <nav></nav>
+  <header>
+    <nav>
+      <div class="logo"><a href="#">Romania.</a></div>
+      <ul class="main-nav">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Rooms</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="hero">
+    <div class="background-overlay">
+      <div class="hero-content">
+        <p>Welcome to Hotel Romania</p>
+        <h1>Experience home away from home</h1>
+      </div>
+    </div>
+  </section>
+  <section id="tour">
+    <div id="inner-tour">
+      <div class="input-box">
+        <div class="box-content">
+          <label for="check-in-date">Check-In</label>
+          <input type="date" name="check-in-date" value="2020-06-08" id="check-in-date">
+        </div>
+      </div>
+      <div class="input-box">
+        <div class="box-content">
+          <label for="check-out-date">Check-Out</label>
+          <input type="date" name="check-out-date" value="2020-06-08" id="check-out-date">
+        </div>
+      </div>
+      <div class="input-box">
+        <div class="box-content">
+          <label>Guests</label>
+          <select name="guests" id="guests">
+            <option value="1 Adult">1 Adult</option>
+            <option value="2 Adults" selected>2 Adults</option>
+            <option value="3 Adults">3 Adults</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-box">
+        <input type="submit" value="Check Rates">
+      </div>
+    </div>
+  </section>
+  <section id="about-us">
+    <div class="watermark-tag">Explore.</div>
+    <div class="inner-content">
+      <h4>About Us</h4>
+      <h2>Your comfort begins here</h2>
+      <div class="about-us-content">
+        <img src="./assets/images/footer img.jpg" alt="about-us" />
+        <div class="sub-content">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non dignissimos alias id eaque autem doloremque sint sit ea harum a obcaecati cum debitis, vero voluptatibus eligendi illo ipsum natus earum soluta, fugit dolor. Sunt sequi aut tenetur error porro voluptas culpa, fugit repudiandae, sit dignissimos neque eveniet, at inventore quaerat.</p>
+          <a href="#">Explore</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="rooms">
+    <div class="watermark-tag">Suites.</div>
+    <div class="inner-content">
+      <h4>Rooms</h4>
+      <h2>Rooms / Suites.</h2>
+      <div class="room-gallery">
+        <div class="luxury-room">
+          <div class="overlay"></div>
+          <img src="./assets/images/luxury room.jpg" alt="Luxury room">
+          <p>Luxury Room <span>$300/Night</span></p>
+        </div>
+        <div class="room-group">
+          <div class="deluxe-room">
+            <div class="overlay"></div>
+            <img src="./assets/images/deluxe room.jpg" alt="Deluxe room">
+            <p>Deluxe Room <span>$270/Night</span></p>
+          </div>
+          <div class="standard-room">
+            <div class="overlay"></div>
+            <img src="./assets/images/standard room.jpg" alt="Standard room">
+            <p>Standard Room <span>$250/Night</span></p>
+          </div>
+        </div>
+      </div>
+      <a href="#">See All</a>
+    </div>
+  </section>
+  <section id="facilities">
+    <div class="inner-content">
+      <h4>Why us?</h4>
+      <h2>Our Facilities</h2>
+      <div class="facilities-group">
+        <div class="facility">
+          <img src="./assets/images/swimming pool.jpg" alt="swimming pool"/>
+          <p>Swimming Pool</p>
+        </div>
+        <div class="facility">
+          <img src="./assets/images/footer img.jpg" alt="mordern gym">
+          <p>Modern Gym</p>
+        </div>
+        <div class="facility">
+          <img src="./assets/images/restaurant.jpg" alt="24/7 Restaurant">
+          <p>24/7 Restaurant</p>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
