@@ -46,7 +46,7 @@ nav .logo a {
     background-image: url(../images/hero\ image.jpg);
     background-size: cover;
     background-repeat: none;
-    height: 620px;
+    height: 400px;
     margin-top: -75px;
 }
 
@@ -62,24 +62,50 @@ nav .logo a {
 
 .hero-content {
     padding: 200px 100px 0;
-    width: 592px;
     color: #FCFCFC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero-content p {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 0px;
     padding-bottom: 0;
+    font-weight: 400;
 }
 
 .hero-content h1 {
     font-size: 48px;
     text-transform: capitalize;
-    line-height: 72px;
     padding-top: 0px;
-    margin-top: 14px;
+    margin: 0;
 }
 
+/* contact form */
+
+.contact-form {
+    padding: 50px 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+}
+
+.contacts {
+    border: 1px solid red;
+    padding: 2rem;
+}
+
+.icon-group {
+    display: flex;
+}
+
+.icon-group 
+
+.form {
+    border: 1px solid red;
+    padding: 2rem;
+}
 
 
 /* footer style */
