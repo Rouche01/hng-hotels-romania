@@ -4,9 +4,13 @@ box-sizing:border-box;
 }
 body{
     font-family:"Poppins", sans-serif;
+    overflow-x:hidden;
+    width:100%;
+
 }
 .container{
     background-color: #FFFFFF;
+    overflow-x:hidden;
 }
 header{
   background-image:linear-gradient(rgba(0, 0, 0, 0.63),rgba(0, 0, 0, 0.63)),url("../images/hero\ image.jpg");  
@@ -35,7 +39,11 @@ header{
 font-size: 50px;
 line-height: 75px;
 color: #F8885A;
-
+width: 15px;
+height: 75px;
+}
+#hero-logo-nav a{
+    text-decoration: none;
 }
 nav{
    
@@ -45,7 +53,6 @@ nav ul{
     margin:0;
     padding:0;
     list-style-type: none;
-    
     font-weight: 600;
     font-size: 18px;
     line-height: 27px;
@@ -60,7 +67,20 @@ nav li{
 nav li:last-child{
     margin-right:0;
 }
+#room{
+    position:relative;
+    
+}
+#room:after{
+    content: '';
+    width: 53px;
+    height: 3px;
+    display: block;
+    background-color:#F8885A;
+    position:absolute;
+    left:6px;
 
+}
 nav li a{
     color: #FCFCFC;
     display:block;
@@ -114,6 +134,16 @@ color: rgba(0, 0, 0, 0.9);
 margin-bottom:57px;
 
 }
+.room-type:after{
+   
+	content: '';
+    width: 113px;
+    height: 5px;
+    display: block;
+    background-color: #F8885A;
+}
+	
+
 .room-description{
 width: 483px;
 height: 144px;
@@ -149,15 +179,35 @@ color: #FFFFFF;
     position: relative;
     padding-right:63px;
     margin-top:275px;
+    /*height: 807px;*/
+  
   }
+/* .deluxe-room:before{
+content:"";
+position:absolute;
+width:200%;
+height:200%;
+transform: rotate(7.87deg);
+    background: rgba(248, 136, 90, 0.07);
+    top:-50%;
+    left: -100px;
+ 
+}*/
+.deluxe-room:after{
+	content:"";
+	display:table;
+	clear:both;
+}
 .deluxe{
-    width: 1622.4px;
+    width:1800.4px;
+    /* width: 1622.4px; */
     height: 1067.27px;
     position: absolute;
     transform: rotate(7.87deg);
     background: rgba(248, 136, 90, 0.07);
     left: -100px;
-    top:1414.26px;;
+    top:1414.26px;
+ 
 }
 
 .deluxe-details{
@@ -174,16 +224,23 @@ color: #FFFFFF;
 }
 
 .deluxe-bg{
-    position: relative;
+   /* position: relative;*/
     background-image:url(../images/deluxe\ room.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 847px;
     height: 807px;
-    left:508px;
-   
+    /*left:508px; */
+    margin:0;
+    padding:0;
+	float:right;
 }
+/* .deluxe-bg:after{
+	content:"";
+	display:table;
+	clear:both;
+} */
 
 .luxurius-room{
     position:relative;
@@ -210,7 +267,7 @@ color: #FFFFFF;
     position: relative;
     top:0;
     left:0;
-    background-image:url(../images/deluxe\ room.jpg);
+    background-image:url(../images/luxury\ room.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -302,7 +359,7 @@ list-style-type: none;
     margin-right:29.53px;
     width:20px;
     height:20px;
-    background: #F8885A;
+    color: #F8885A;
 }
 #foot-links li:last-child{
     margin-right:0;
