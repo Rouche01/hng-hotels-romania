@@ -17,6 +17,9 @@
         <li><a href="#">Gallery</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
+      <div class="burger-menu">
+        <span class="lines"></span>
+      </div>
     </nav>
   </header>
   <section id="hero">
@@ -31,24 +34,24 @@
     <div id="inner-tour">
       <div class="input-box">
         <div class="box-content">
-          <label for="check-in-date">Check-In</label>
           <input type="date" name="check-in-date" value="2020-06-08" id="check-in-date">
+          <label for="check-in-date">Check-In</label>
         </div>
       </div>
       <div class="input-box">
         <div class="box-content">
-          <label for="check-out-date">Check-Out</label>
           <input type="date" name="check-out-date" value="2020-06-08" id="check-out-date">
+          <label for="check-out-date">Check-Out</label>
         </div>
       </div>
       <div class="input-box">
         <div class="box-content">
-          <label>Guests</label>
           <select name="guests" id="guests">
-            <option value="1 Adult">1 Adult</option>
-            <option value="2 Adults" selected>2 Adults</option>
-            <option value="3 Adults">3 Adults</option>
+            <option style="color: #F8885A;" value="1 Adult">1 Adult</option>
+            <option style="color: #F8885A;" value="2 Adults" selected>2 Adults</option>
+            <option style="color: #F8885A;" value="3 Adults">3 Adults</option>
           </select>
+          <label>Guests</label>
         </div>
       </div>
       <div class="input-box">
@@ -94,6 +97,28 @@
           </div>
         </div>
       </div>
+      <div class="slider-indicators">
+        <a href="#luxury-room" class="slider-indicator current-slide"></a>
+        <a href="#deluxe-room" class="slider-indicator"></a>
+        <a href="#standard-room" class="slider-indicator"></a>
+      </div>
+      <div class="room-gallery-mobile">
+        <div class="luxury-room" id="luxury-room">
+          <div class="overlay"></div>
+          <img src="./assets/images/luxury room.jpg" alt="Luxury room">
+          <p>Luxury Room <span>$300/Night</span></p>
+        </div>
+        <div class="deluxe-room" id="deluxe-room">
+          <div class="overlay"></div>
+          <img src="./assets/images/deluxe room.jpg" alt="Deluxe room">
+          <p>Deluxe Room <span>$270/Night</span></p>
+        </div>
+        <div class="standard-room" id="standard-room">
+          <div class="overlay"></div>
+          <img src="./assets/images/standard room.jpg" alt="Standard room">
+          <p>Standard Room <span>$250/Night</span></p>
+        </div>
+      </div>
       <a href="#">See All</a>
     </div>
   </section>
@@ -118,6 +143,28 @@
           <p>24/7 Restaurant</p>
         </div>
       </div>
+      <div class="slider-indicators">
+        <a href="#swimming-pool" class="slider-indicator-2 current-slide-2"></a>
+        <a href="#modern-gym" class="slider-indicator-2"></a>
+        <a href="#restaurant" class="slider-indicator-2"></a>
+      </div>
+      <div class="facilities-group-mobile">
+        <div class="facility" id="swimming-pool">
+          <div class="overlay"></div>
+          <img src="./assets/images/swimming pool.jpg" alt="swimming pool"/>
+          <p>Swimming Pool</p>
+        </div>
+        <div class="facility" id="modern-gym">
+          <div class="overlay"></div>
+          <img src="./assets/images/footer img.jpg" alt="mordern gym">
+          <p>Modern Gym</p>
+        </div>
+        <div class="facility" id="restaurant">
+          <div class="overlay"></div>
+          <img src="./assets/images/restaurant.jpg" alt="24/7 Restaurant">
+          <p>24/7 Restaurant</p>
+        </div>
+      </div>
       <a href="#">See All</a>
     </div>
   </section>
@@ -125,25 +172,30 @@
     <div class="inner-content">
       <h4>Testimonials</h4>
       <h2>What they say about us</h2>
+      <div class="slider-indicators">
+        <a href="#testimonial-1" class="slider-indicator-3 current-slide-3"></a>
+        <a href="#testimonial-2" class="slider-indicator-3"></a>
+        <a href="#testimonial-3" class="slider-indicator-3"></a>
+      </div>
       <div class="testimonials-group">
-        <div class="testimonial">
-          <h5>An Amazing Experience</h5>
+        <div class="testimonial" id="testimonial-1">
+          <h5>An Amazing Experience!</h5>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iure officia cupiditate obcaecati doloremque consequuntur molestiae recusandae perspiciatis ea error, minus repudiandae!</p>
           <div class="personal-info">
             <img src="./assets/images/avatar.jpg" alt="avatar">
             <p>Rose Kennedy<small>From Egypt</small></p>
           </div>
         </div>
-        <div class="testimonial">
-          <h5>An Amazing Experience</h5>
+        <div class="testimonial" id="testimonial-2">
+          <h5>An Amazing Experience!</h5>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iure officia cupiditate obcaecati doloremque consequuntur molestiae recusandae perspiciatis ea error, minus repudiandae!</p>
           <div class="personal-info">
             <img src="./assets/images/avatar.jpg" alt="avatar">
             <p>Rose Kennedy<small>From Egypt</small></p>
           </div>
         </div>
-        <div class="testimonial">
-          <h5>An Amazing Experience</h5>
+        <div class="testimonial" id="testimonial-3">
+          <h5>An Amazing Experience!</h5>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iure officia cupiditate obcaecati doloremque consequuntur molestiae recusandae perspiciatis ea error, minus repudiandae!</p>
           <div class="personal-info">
             <img src="./assets/images/avatar.jpg" alt="avatar">
@@ -177,4 +229,5 @@
     </div>
   </footer>
 </body>
+<script src="./assets/js/script.js"></script>
 </html>
