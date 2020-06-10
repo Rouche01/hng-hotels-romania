@@ -9,6 +9,7 @@ body{
 
 }
 .container{
+    margin: 0 auto;
     background-color: #FFFFFF;
     overflow-x:hidden;
 }
@@ -176,11 +177,13 @@ color: #FFFFFF;
 }
 
 .deluxe-room{
+   
+    justify-content: right;
     position: relative;
     padding-right:63px;
     padding-left:102px;
     margin-top:275px;
-    /*height: 807px;*/
+    height: 807px;
   
   }
 /* .deluxe-room:before{
@@ -212,6 +215,7 @@ transform: rotate(7.87deg);
 }
 
 .deluxe-details{
+    
     position: absolute;
     background-color: aqua;
     left:102px;
@@ -225,7 +229,7 @@ transform: rotate(7.87deg);
 }
 
 .deluxe-bg{
-   /* position: relative;*/
+    position: absolute;
     background-image:url(../images/deluxe\ room.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -235,13 +239,9 @@ transform: rotate(7.87deg);
     /*left:508px; */
     margin:0;
     padding:0;
-	float:right;
+    /* float:right; */
+    right:63px; 
 }
-/* .deluxe-bg:after{
-	content:"";
-	display:table;
-	clear:both;
-} */
 
 .luxurius-room{
     position:relative;
