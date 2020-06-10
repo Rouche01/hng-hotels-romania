@@ -92,19 +92,63 @@ nav .logo a {
 }
 
 .contacts {
-    border: 1px solid red;
     padding: 2rem;
+}
+
+.contacts h1 {
+    margin-bottom: 0;
 }
 
 .icon-group {
     display: flex;
+    align-items: center;
 }
 
-.icon-group 
+.icon-group p {
+    margin-right: 10px;
+}
+
+.icon-group:nth-child(2) div * {
+    margin: 5px 0;
+}
 
 .form {
-    border: 1px solid red;
-    padding: 2rem;
+    padding: 2rem 4rem 0rem 3rem;
+    height: 100%;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.input-group input {
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 0.5rem 0;
+    outline: none;
+}
+
+.input-group textarea {
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none
+}
+
+form input[type="submit"] {
+    width: 8rem;
+    padding: 1rem;
+    background-color: #EB4501;
+    border: none;
+    color: white;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
 }
 
 
@@ -116,7 +160,7 @@ nav .logo a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 #sub-footer .background-overlay {
