@@ -5,14 +5,13 @@ box-sizing:border-box;
 body{
     font-family:"Poppins", sans-serif;
     overflow-x:hidden;
-    width:100%;
+    
 
 }
 .container{
-    margin: 0 auto;
+    
     background-color: #FFFFFF;
-    overflow-x:hidden;
-}
+}  
 header{
   background-image:linear-gradient(rgba(0, 0, 0, 0.63),rgba(0, 0, 0, 0.63)),url("../images/hero\ image.jpg");  
   background-position: center;
@@ -95,19 +94,19 @@ font-size: 36px;
 line-height: 54px;
 color: #FCFCFC;
 }
-.standard-room{
+.standard-room, .deluxe-room{
     position:relative;
     padding-left:102px;
     padding-right:63px;
     margin-top:135px;
     background-color: #FFFFFF;
-    
+    height: 807px;
     
 }
 .standard-bg{
-    position:relative;
+    position: absolute;
     top:0;
-    left:0;
+    left:102px;
     background-image:url(../images/standard\ room.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -121,7 +120,7 @@ color: #FCFCFC;
     top:130px;
     right:63px;
     width: 576px;
-    height: 560px;
+    /* height: 560px; */
     background: #FFFFFF;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.25);
     padding: 46px 0 81px 65px;
@@ -146,6 +145,7 @@ margin-bottom:57px;
 	
 
 .room-description{
+
 width: 483px;
 height: 144px;
 font-style: normal;
@@ -178,25 +178,16 @@ color: #FFFFFF;
 
 .deluxe-room{
    
-    justify-content: right;
-    position: relative;
+    
+    /* position: relative;
     padding-right:63px;
     padding-left:102px;
-    margin-top:275px;
-    height: 807px;
+    height: 807px; */
+    margin-top:275px; 
+    
   
   }
-/* .deluxe-room:before{
-content:"";
-position:absolute;
-width:200%;
-height:200%;
-transform: rotate(7.87deg);
-    background: rgba(248, 136, 90, 0.07);
-    top:-50%;
-    left: -100px;
- 
-}*/
+
 .deluxe-room:after{
 	content:"";
 	display:table;
@@ -236,19 +227,20 @@ transform: rotate(7.87deg);
     background-size: cover;
     width: 847px;
     height: 807px;
-    /*left:508px; */
+   
     margin:0;
     padding:0;
-    /* float:right; */
+   
     right:63px; 
 }
 
 .luxurius-room{
-    position:relative;
+    position: relative;;
     padding-left:102px;
     padding-right:63px;
     margin-top:275px;
     background-color: #FFFFFF;
+    height: 807px;
 }
 
 .luxurius-details{
@@ -265,9 +257,9 @@ transform: rotate(7.87deg);
 
 
 .luxurius-bg{
-    position: relative;
+    position: absolute;
     top:0;
-    left:0;
+    left:102px;
     background-image:url(../images/luxury\ room.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -282,15 +274,15 @@ transform: rotate(7.87deg);
     justify-items: center;
     text-align: center;
     margin-top:413px;
-    height: 542px;
-    
+    padding-top:143px;
+    height: 542px;    
     background-image:linear-gradient( rgba(0, 0, 0, 0.69),rgba(0, 0, 0, 0.69)),url(../images/footer\ img.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .call-to-action h2{
-margin-top:143px;
+
 margin-bottom:18px;
 width: 669px;
 height: 56px;
@@ -367,5 +359,256 @@ list-style-type: none;
 }
 #footer-links li a{
     text-decoration: none;
-    display: block;
+    
+}
+@media screen and (max-width:414px){
+
+    header{
+        background-image:linear-gradient(rgba(0, 0, 0, 0.63),rgba(0, 0, 0, 0.63)),url("../images/hero\ image.jpg");  
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        height: 262px;
+        padding-left:33px;
+        padding-right:36px;
+      }
+      #hero-logo-nav{
+          display:flex;
+          justify-content:space-between;
+          flex-flow: row;
+      }
+      #hero-logo-nav h2{
+          
+        font-weight: bold;
+        color: #FFFFFF;          
+        padding:0;        
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 21px;
+      }
+      #hero-logo-nav h2 #dot{
+      
+      color: #F8885A;       
+        font-size: 36px;
+        line-height: 54px;
+      }
+      #hero-logo-nav a{
+          text-decoration: none;
+      }
+      nav{
+         display:none;
+          
+       }
+      nav ul{
+          
+         
+      }
+      nav li{
+         
+          
+      }
+      nav li:last-child{
+          
+      }
+
+      /* #room{
+          position:relative;
+          
+      }
+      #room:after{
+          content: '';
+          width: 53px;
+          height: 3px;
+          display: block;
+          background-color:#F8885A;
+          position:absolute;
+          left:6px;
+      
+      }
+      nav li a{
+          color: #FCFCFC;
+          display:block;
+          text-decoration: none;
+      }*/
+      #hero-title{
+      margin-top:64px;
+      
+
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 27px;
+        text-align: center;
+      color: #FCFCFC;
+      } 
+      .standard-room,.luxurius-room,.deluxe-room{
+        position:relative;
+        display:flex;
+        flex-flow:column;
+        padding-left:33px;
+        padding-right:36px;
+        margin-top:125px;
+        background-color: #FFFFFF;
+        height:525px;
+        
+    }
+    .standard-bg,.deluxe-bg,.luxurius-bg{
+        position: static;
+        width: 345px;
+        height: 223px;
+        
+    }
+    .deluxe-bg, .luxurius-bg{
+        min-height: 223px;
+    }
+    .standard-details,.deluxe-details,.luxurius-details{
+        position: static;        
+        width: 345px;   
+        
+        box-shadow:none;
+        border:none;
+        background:none;
+        padding: 0;
+    }
+
+    .room-type{
+        position:absolute;
+        top:-53px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+
+        color: #33373D;
+        margin-bottom:57px;
+    
+    }
+    .room-type:after{
+        content: '';
+        width: 63px;
+        height: 0px;
+        border: 3px solid #F8885A;
+    }
+        
+    
+    .room-description{
+    margin-top:78px;
+    margin-bottom:12px;
+    font-size: 18px;
+    width:100%;
+    height:108px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 0.6);
+    
+    padding:0;
+    
+    }
+    .room-price{
+    position:absolute;
+    width: 137px;
+    height: 66px;
+    left: 138px;
+    top: 187px;
+    padding:20px 12px 19px  12px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #F8885A;
+        }
+    .btn-book-now{
+    width: 149px;
+    height: 51px;
+    background: linear-gradient(180deg, #F8885A 0%, #EB4501 100%);
+    border:none;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+    }
+    .deluxe{
+        z-index:1;
+        position: absolute;
+        width: 870.92px;
+        height: 620px;
+        left: -180.2px;
+        top: 990.92px;
+
+        background: rgba(248, 136, 90, 0.07);
+        transform: rotate(7.87deg);
+
+    }
+
+
+    .call-to-action{
+        display:flex;
+        padding-top:79px;        
+        margin-top:98px;
+        
+        height: 364px;
+        justify-content: space-around;
+        
+    }
+    .call-to-action h2{
+    margin-bottom:22px;
+    width: 287px;
+    height: 70px;      
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    }
+    .call-to-action p{
+        width: 271px;
+        height: 45px;               
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.73);
+        margin-bottom:34px;
+    }
+    .btn-footer{
+              
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 19px;
+        width: 100px;
+        height: 47px;
+        
+        }
+
+        footer{
+            margin-top:0;
+            padding:0;
+        }
+        .footer-wrapper{
+            padding-top:22px;
+            padding-bottom:9px;
+            border:none;
+            display: flex;
+            flex-flow:column;
+            
+            text-align: center;
+        }
+        #footer-home{
+        display: none;
+        }
+        #copyright{
+            order:2;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 21px;
+            margin-top:13px;
+        }
+        #footer-links ul{
+            order:1;
+            }
+        
+        #footer-links li{
+            margin-right:29.53px;
+            
+        }
+        #footer-links li a img{
+            width:17px;
+            height:17px;
+        }
 }
