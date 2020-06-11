@@ -1,5 +1,9 @@
+*{
+    margin:0;
+    box-sizing:border-box;
+}
+
 body {
-    margin: 0;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
 }
@@ -20,6 +24,14 @@ nav .logo a {
     font-weight: bold;
     text-decoration: none;
     color: #fff;
+}
+
+nav .logo a span {
+    font-size: 50px;
+    color: #F8885A;
+    display: inline-block;
+    margin-left: 5px;
+    line-height: 0;
 }
 
 .main-nav {
@@ -62,7 +74,7 @@ nav .logo a {
 
 .hero-content {
     padding: 200px 100px 0;
-    width: 592px;
+    width: 800px;
     color: #FCFCFC;
 }
 
@@ -78,6 +90,28 @@ nav .logo a {
     line-height: 72px;
     padding-top: 0px;
     margin-top: 14px;
+}
+
+#hero-rooms, #hero-facilities {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.63),rgba(0, 0, 0, 0.63)),url("../images/hero\ image.jpg");  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 348px;
+}
+
+#hero-rooms .inner-content, #hero-facilities .inner-content {
+    padding: 0 100px;
+}
+
+#hero-rooms .inner-content h2, #hero-facilities .inner-content h2 {
+    margin-top:-75px;
+    text-align:center;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    color: #FCFCFC;
+    padding-top: 170px;
 }
 
 #tour {
@@ -220,6 +254,7 @@ nav .logo a {
     text-decoration: none;
     display: inline-block;
     font-weight: 600;
+    margin-top: 60px;
 }
 
 #about-us .inner-content .about-us-content .sub-content a:after, #rooms .inner-content a:after, #facilities .inner-content a:after {
@@ -252,6 +287,40 @@ nav .logo a {
 
 #rooms {
     position: relative;
+    background-color:rgb(255, 243, 238);
+    margin-top: 200px;
+    padding-top: 0;
+}
+
+#rooms .inner-content {
+    padding-top: 0;
+}
+
+#rooms:before, .deluxe-room:before {
+    top: 0px;
+    transform: skewY(6deg);
+    transform-origin: 100% 0;
+    height: 20%;
+    background-color:rgb(255, 243, 238);
+}
+
+#rooms:after, .deluxe-room:after {
+    bottom: 0;
+    transform: skewY(6deg);
+    transform-origin: 0%;
+    height: 20%;
+    background-color:rgb(255, 243, 238);
+}
+
+#rooms::before, #rooms::after, .deluxe-room:after, .deluxe-room::before {
+    /* background: inherit; */
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden;
 }
 
 #rooms .slider-indicators, #facilities .slider-indicators {
@@ -290,6 +359,10 @@ nav .logo a {
 #rooms .inner-content .room-gallery .luxury-room {
     margin-left: 130px;
     position: relative;
+}
+
+#rooms .inner-content .suites-link {
+    margin-top: 120px;
 }
 
 #rooms .inner-content .room-gallery .deluxe-room, #rooms .inner-content .room-gallery .standard-room {
@@ -451,12 +524,12 @@ nav .logo a {
     color: rgba(51, 55, 61, 0.82);
     font-weight: 600;
     text-align: center;
+    margin-top: 36px;
 }
 
 #testimonials .inner-content .testimonials-group .testimonial p {
     font-size: 20px;
     text-align: center;
-    margin-top: 30px;
     color: rgba(0, 0, 0, 0.6);
 }
 
@@ -465,6 +538,7 @@ nav .logo a {
     margin-top: 32px;
     align-items: center;
     justify-content: center;
+    margin-bottom: 60px;
 }
 
 #testimonials .inner-content .testimonials-group .testimonial .personal-info img {
@@ -549,6 +623,7 @@ footer .inner-content .major-footer {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    margin: 20px 0;
 }
 
 footer .inner-content .major-footer .footer-logo {
@@ -805,7 +880,7 @@ footer .inner-content .major-footer ul li {
     }
 
     #about-us, #rooms, #facilities, #testimonials {
-        margin-top: 60px;
+        margin-top: 40px;
     }
 
     #about-us .inner-content .about-us-content {
@@ -813,18 +888,27 @@ footer .inner-content .major-footer ul li {
     }
 
     #about-us .inner-content .about-us-content img {
-        max-width: 345px;
         width: 100%;
         height: 354px;
         object-fit: cover;
     }
 
     #tour {
-        padding: 0 20px;
+        padding: 0 28px;
     }
+
     #about-us .inner-content, #rooms .inner-content, #facilities .inner-content, #testimonials .inner-content {
-        padding: 20px 20px;;
+        padding: 30px 28px;
     }
+
+    #rooms:before {
+        top: 0;
+    }
+    
+    #rooms:after {
+        bottom: 0;
+    }
+
     #rooms .watermark-tag, #about-us .watermark-tag {
         display: none;
     }
@@ -846,6 +930,10 @@ footer .inner-content .major-footer ul li {
         bottom: 55px;
         width: calc(100% - 40px);
         text-align: center;
+    }
+
+    #rooms .slider-indicators, #facilities .slider-indicators {
+        display: block;
     }
 
     #testimonials .inner-content .slider-indicators {
@@ -875,6 +963,10 @@ footer .inner-content .major-footer ul li {
         content: '';
     }
 
+    #rooms .inner-content .suites-link {
+        margin-top: 50px;
+    }
+
     #rooms .inner-content .room-gallery-mobile, #facilities .inner-content .facilities-group-mobile, #testimonials .inner-content .testimonials-group {
         display: flex;
         overflow-x: auto;
@@ -883,7 +975,7 @@ footer .inner-content .major-footer ul li {
         -webkit-overflow-scrolling: touch;
     }
 
-    #testimonials .inner-content .testimonials-group::-webkit-scrollbar {
+    #testimonials .inner-content .testimonials-group::-webkit-scrollbar, #rooms .inner-content .room-gallery-mobile::-webkit-scrollbar, #facilities .inner-content .facilities-group-mobile::-webkit-scrollbar {
         display: none;
     }
 
@@ -897,12 +989,15 @@ footer .inner-content .major-footer ul li {
         width: 100%;
     }
 
+    #about-us .inner-content h4:after, #rooms .inner-content h4:after, #facilities .inner-content h4:after, #testimonials .inner-content h4:after {
+        margin-top: 5px;
+    }
+
     #rooms .inner-content .room-gallery-mobile .luxury-room, #rooms .inner-content .room-gallery-mobile .deluxe-room, #rooms .inner-content .room-gallery-mobile .standard-room, #facilities .inner-content .facilities-group-mobile .facility {
         position: relative;
     }
 
     #rooms .inner-content .room-gallery-mobile img {
-        max-width: 345px;
         height: 448px;
         width: 100%;
         object-fit: cover;
@@ -913,7 +1008,6 @@ footer .inner-content .major-footer ul li {
         position: absolute;
         height: 448px;
         width: 100%;
-        max-width: 345px;
         top: 0;
         left: 0;
     }
@@ -936,7 +1030,6 @@ footer .inner-content .major-footer ul li {
     }
 
     #facilities .inner-content .facilities-group-mobile .facility img {
-        max-width: 346px;
         height: 449px;
         width: 100%;
         object-fit: cover;
@@ -1019,7 +1112,7 @@ footer .inner-content .major-footer ul li {
     }
 
     #about-us .inner-content .about-us-content .sub-content p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     #about-us .inner-content .about-us-content .sub-content a, #rooms .inner-content a, #facilities .inner-content a {
@@ -1039,6 +1132,7 @@ footer .inner-content .major-footer ul li {
     #sub-footer h2 {
         font-size: 24px;
         font-weight: 600;
+        padding: 0 20px;
     }
 
     #sub-footer p {

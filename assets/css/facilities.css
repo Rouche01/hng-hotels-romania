@@ -1,0 +1,112 @@
+.restaurant247, .pool, .gym {
+	padding: 100px 100px;
+	display:flex;
+	align-items: center;
+}
+
+.gym {
+	margin-top: 250px;
+}
+
+.restaurant247 .rest1, .pool .pool2, .gym .gym-spa {
+	position: relative;
+}
+
+.restaurant247 .rest1 .restimg1 {
+	width: 476px;
+	height: 600px;
+	object-fit: cover;
+}
+
+.gym .gym-spa1 {
+	margin-left:180px;
+	padding-left: 50px;
+}
+
+.gym .gym-spa .gym-spaimg1 {
+	width: 476px;
+	height: 547px;
+	object-fit: cover;
+}
+
+.pool .pool2 .poolimg2 {
+	width: 550px;
+	height: 399px;
+	object-fit: cover;
+}
+
+.pool .pool1 {
+	margin-top: 203px;
+}
+
+.pool .pool2 {
+	margin-left: 230px;
+}
+
+.restaurant247 .rest1 .restimg2 {
+	position: absolute;
+	top: 176px;
+	left: 218px;
+	border: 12px solid #FFFFFF;
+	width: 424px;
+	height: 489px;
+	object-fit: cover;
+}
+
+.gym .gym-spa .gym-spaimg2 {
+	position: absolute;
+	top: 319px;
+	left: 218px;
+	border: 12px solid #FFFFFF;
+	width: 424px;
+	height: 436px;
+	object-fit: cover;
+}
+
+.pool .pool2 .poolimg1 {
+	position: absolute;
+	width: 446px;
+	height: 499px;
+	border: 12px solid #FFFFFF;
+	object-fit: cover;
+	top: 203px;
+	right: 230px;
+}
+	
+.rest2{
+	float:right;
+	width:483px;
+	margin-left: 200px;
+	/* padding-top:67px; */
+	
+	
+}
+h4{
+	font-size:30px;
+	line-height:54px; 
+	
+}
+h4:after{
+	content:" ";
+	width:55px;
+	height:3px;
+	display:block;
+	background-color:#EB4501;
+	
+}
+.details{
+	font-family:poppins;
+	font-size:18px;
+	margin-top:7px;
+	
+}
+@media  only screen (max-width:768px){
+.restimg2{
+	display:hi;
+}	
+}
+
+
+768
+
+	
