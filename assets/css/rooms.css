@@ -5,7 +5,7 @@ box-sizing:border-box;
 body{
     font-family:"Poppins", sans-serif;
     overflow-x:hidden;
-
+    width:100%;
 }
 a,button{
     cursor: pointer;
@@ -70,6 +70,9 @@ nav li{
 }
 nav li:last-child{
     margin-right:0;
+}
+ .burger-menu {
+    display: none;
 }
 #room{
     position:relative;   
@@ -384,10 +387,10 @@ list-style-type: none;
         line-height: 54px;
       }
       
-     /* nav styling start */
-
-
-
+     /* nav styling start   */
+      .main-nav{
+          display:none;
+      }
       /* nav styling ends */
 
       #hero-title{
