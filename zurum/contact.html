@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/4b44ac96c3.js"></script>
+    <title>Romania | Contact Us</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="#">Romania <span class="logoDot">.</span></a>
+                </div>
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Rooms</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        </nav>
+
+        <section class="home ">
+            <div class="overlay">
+                <div class="message">
+                    <h3>Contact Us</h3>
+                    <p>We'd love to hear from you</p>
+                </div>
+            </div>
+        </section>
+    </header>
+    <section>
+        <div class="address-container">
+            <div class="address">
+
+                <h2>Address</h2>
+                <p><i class="fa fa-map-marker" aria-hidden="true"></i> 6, kingsway Road, Ikoyi, Lagos.</p>
+
+                <h2>Phone</h2>
+                <p><i class="fa fa-phone" aria-hidden="true"> </i> +234-567-890-456</p>
+                <p> +234-098-765-432</p>
+
+                <h2>Email</h2>
+                <p><i class="fa fa-envelope" aria-hidden="true"></i> 6, kingsway Road, Ikoyi, Lagos.</p>
+            </div>
+
+            <div class="address-form">
+                <form class="form">
+                    <h2>Drop a message</h2>
+                    <p type="Name:"><input></input></p>
+                    <p type="Email:"><input></input></p>
+                    <p type="Phone:"><input></input></p>
+                    <p type="Message:"><input></input></p>
+                    <button>Send Message</button>
+
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="call-to-action">
+        <div class="call-to-action-details">
+            <h2>Begin your amazing experience here </h2>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium </p>
+            <button class="btn-footer">Book Now</button>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-wrapper">
+            <div id="footer-home">
+                <h3>Romania</h3>
+            </div>
+            <div id="copyright">
+                <p>&copy; Romania. 2020 All Rights Reserved</p>
+            </div>
+            <div id="footer-links">
+                <ul>
+                    <li><a href="www.facebook.com"> <img src="facebook.png" alt="facebook logo"> </a></li>
+                    <li><a href="www.twitter.com"> <img src="twitter.png" alt="twitter logo"> </a> </li>
+                    <li><a href="www.instagram.com"> <img src="instagram.png" alt="instagram logo"> </a> </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+
+        $('.navTrigger').click(function () {
+            $(this).toggleClass('active');
+            console.log("Clicked menu");
+            $("#mainListDiv").toggleClass("show_list");
+            $("#mainListDiv").fadeIn();
+
+        });
+
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                $(".nav").addClass("affix");
+                console.log("OK");
+            } else {
+                $(".nav").removeClass("affix");
+            }
+        });
+
+
+    </script>
+
+</body>
+
+</html>
