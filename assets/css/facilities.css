@@ -74,9 +74,7 @@
 }
 	
 .rest2{
-	float:right;
-	width:483px;
-	margin-left: 200px;
+	margin-left: 220px;
 	/* padding-top:67px; */
 	
 	
@@ -84,8 +82,13 @@
 h4{
 	font-size:30px;
 	line-height:54px; 
-	
+	color: #33373D;
 }
+
+.mobile-gym, .mobile-spa {
+	display: none;
+}
+
 h4:after{
 	content:" ";
 	width:55px;
@@ -100,13 +103,110 @@ h4:after{
 	margin-top:7px;
 	
 }
-@media  only screen (max-width:768px){
-.restimg2{
-	display:hi;
-}	
+@media screen and (max-width:768px){
+	.restaurant247, .gym {
+		flex-direction: column-reverse;
+		padding: 60px 28px 0px;
+		position: relative;
+		align-items: unset;
+	}
+
+	.gym {
+		margin-top: 190px;
+		margin-bottom: 250px;
+	}
+
+	.pool {
+		flex-direction: column;
+		padding: 40px 28px 0;
+		position: relative;
+		align-items: unset;
+	}
+
+	.restaurant247 .rest1 .restimg2, .pool .pool2 .poolimg2 {
+		display: none;
+	}
+
+	.restaurant247 .rest1 .restimg1, .gym .gym-spa .gym-spaimg1, .gym .gym-spa .gym-spaimg2 {
+		width: 100%;
+		height: 223px;
+	}
+
+	.pool .pool2 {
+		margin-left: 0;
+	}
+
+	.gym .gym-spa .gym-spaimg2 {
+		border: none;
+	}
+
+	.gym .gym-spa .gym-spaimg2 {
+		position: unset;
+		margin-top: 280px;
+	}
+
+	.pool .pool2 .poolimg1 {
+		position: unset;
+		border: none;
+		width: 100%;
+		height: 223px;
+	}
+
+	.gym .gym-spa1 {
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+	.gym .gym-spa1 h4, .gym .gym-spa1 .details {
+		display: none;
+	}
+
+	.gym .gym-spa1 .mobile-gym, .gym .gym-spa1 .mobile-gym .details, .gym .gym-spa1 .mobile-gym h4, .gym .gym-spa1 .mobile-spa, .gym .gym-spa1 .mobile-spa h4, .gym .gym-spa1 .mobile-spa .details {
+		display: block;
+	}
+
+	.gym .gym-spa1 .mobile-gym h4 {
+		margin-bottom: 25px;
+	}
+
+	.gym .gym-spa1 .mobile-gym .details, .gym .gym-spa1 .mobile-spa {
+		position: absolute;
+		/* top: calc(100% + 20px); */
+	}
+
+	.gym .gym-spa1 .mobile-gym .details {
+		top: calc(40% + 30px);
+	}
+
+	.gym .gym-spa1 .mobile-spa {
+		top: calc(96% + 20px);
+	}
+
+	.gym .gym-spa1 .mobile-spa h4 {
+		position: relative;
+		bottom: 270px;
+	}
+
+	.restaurant247 .rest2 h4, .pool .pool1 h4 {
+		margin-bottom: 25px;
+	}
+
+	.restaurant247 .rest2 .details, .pool .pool1 .details {
+		position: absolute;
+		top: calc(100% + 20px);
+		padding: 0 28px;
+		left: 0;
+	}
+
+	.rest2 {
+		margin-left: 0; 
+	}
+
+	h4 {
+		font-size: 18px;
+		line-height: 27px;
+	}
 }
 
-
-768
 
 	
