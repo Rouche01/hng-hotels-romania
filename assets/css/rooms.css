@@ -5,13 +5,16 @@ box-sizing:border-box;
 body{
     font-family:"Poppins", sans-serif;
     overflow-x:hidden;
-    
 
+}
+a,button{
+    cursor: pointer;
 }
 .container{
     
     background-color: #FFFFFF;
 }  
+/* Header styling start */
 header{
   background-image:linear-gradient(rgba(0, 0, 0, 0.63),rgba(0, 0, 0, 0.63)),url("../images/hero\ image.jpg");  
   background-position: center;
@@ -21,13 +24,12 @@ header{
   padding-left:102px;
   padding-right:63px;
 }
-#hero-logo-nav{
+#logo-nav-wrapper{
     display:flex;
     justify-content:space-between;
     flex-flow: row;
 }
-#hero-logo-nav h2{
-    
+#logo-nav-wrapper #logo{
     font-weight: bold;
     font-size: 24px;
     color: #FFFFFF;
@@ -35,19 +37,21 @@ header{
     padding:0;
     margin-top:17px;
 }
-#hero-logo-nav h2 #dot{
+#logo-nav-wrapper #logo #dot{
 font-size: 50px;
 line-height: 75px;
 color: #F8885A;
 width: 15px;
 height: 75px;
 }
-#hero-logo-nav a{
+#logo-nav-wrapper a{
     text-decoration: none;
+    font-weight: bold;
+    
+    color: #FFFFFF;
 }
 nav{
-   
-    margin-top:50px;
+       margin-top:50px;
  }
 nav ul{
     margin:0;
@@ -68,8 +72,7 @@ nav li:last-child{
     margin-right:0;
 }
 #room{
-    position:relative;
-    
+    position:relative;   
 }
 #room:after{
     content: '';
@@ -93,13 +96,13 @@ font-weight: bold;
 font-size: 36px;
 line-height: 54px;
 color: #FCFCFC;
-}
-.standard-room, .deluxe-room{
+} /* Header styling ends */
+/* Room styling start */
+.standard-room, .deluxe-room, .luxurius-room{
     position:relative;
     padding-left:102px;
     padding-right:63px;
-    margin-top:135px;
-    background-color: #FFFFFF;
+    margin-top:135px;    
     height: 807px;
     
 }
@@ -119,8 +122,7 @@ color: #FCFCFC;
     position: absolute;
     top:130px;
     right:63px;
-    width: 576px;
-    /* height: 560px; */
+    width: 576px;   
     background: #FFFFFF;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.25);
     padding: 46px 0 81px 65px;
@@ -130,22 +132,19 @@ color: #FCFCFC;
     font-weight: normal;
     font-size: 36px;
     line-height: 54px;
-color: rgba(0, 0, 0, 0.9);
-margin-bottom:57px;
+    color: rgba(0, 0, 0, 0.9);
+    margin-bottom:57px;
 
 }
 .room-type:after{
-   
-	content: '';
+   	content: '';
     width: 113px;
     height: 5px;
     display: block;
     background-color: #F8885A;
 }
 	
-
 .room-description{
-
 width: 483px;
 height: 144px;
 font-style: normal;
@@ -176,26 +175,20 @@ line-height: 27px;
 color: #FFFFFF;
 }
 
-.deluxe-room{
-   
-    
-    /* position: relative;
-    padding-right:63px;
-    padding-left:102px;
-    height: 807px; */
-    margin-top:275px; 
-    
+.deluxe-room, .luxurius-room{
   
-  }
+ margin-top:275px; 
+  
+    }
 
 .deluxe-room:after{
 	content:"";
 	display:table;
 	clear:both;
 }
+/* Rotated background styling */
 .deluxe{
     width:1800.4px;
-    /* width: 1622.4px; */
     height: 1067.27px;
     position: absolute;
     transform: rotate(7.87deg);
@@ -203,12 +196,10 @@ color: #FFFFFF;
     left: -100px;
     top:1414.26px;
  
-}
+} /* Rotated background styling ends */
 
 .deluxe-details{
-    
-    position: absolute;
-    background-color: aqua;
+    position: absolute;    
     left:102px;
     top:130px;
     width: 576px;
@@ -232,15 +223,6 @@ color: #FFFFFF;
     padding:0;
    
     right:63px; 
-}
-
-.luxurius-room{
-    position: relative;;
-    padding-left:102px;
-    padding-right:63px;
-    margin-top:275px;
-    background-color: #FFFFFF;
-    height: 807px;
 }
 
 .luxurius-details{
@@ -267,6 +249,7 @@ color: #FFFFFF;
     width: 847px;
     height: 807px;   
 }
+/* Call to action styling*/
 .call-to-action{
     display:flex;
     flex-flow:row;
@@ -305,7 +288,7 @@ color: #FFFFFF;
     color: rgba(255, 255, 255, 0.73);
     margin-bottom:50.54px;
 }
-.btn-footer{
+.btn-cta{
 font-family: Poppins;
 font-style: normal;
 font-weight: 500;
@@ -317,7 +300,7 @@ width: 212px;
 height: 75.09px;
 background: linear-gradient(180deg, #F8885A 0%, #EB4501 100%);
 }
-
+/* footer styling starts */
 footer{
     margin-top:58px;
     padding:0 94px 34px 101px;
@@ -357,11 +340,20 @@ list-style-type: none;
 #foot-links li:last-child{
     margin-right:0;
 }
-#footer-links li a{
-    text-decoration: none;
-    
+#footer-home a{
+    text-decoration:none;
+    color: #F8885A;
 }
-@media screen and (max-width:414px){
+#footer-links li a{
+    text-decoration: none;}
+
+#footer-links li a img{
+        width:20px;
+        height:20px;
+    }
+   /*  footer styling ends */
+
+@media screen and (max-width:415px){
 
     header{
         background-image:linear-gradient(rgba(0, 0, 0, 0.63),rgba(0, 0, 0, 0.63)),url("../images/hero\ image.jpg");  
@@ -372,12 +364,12 @@ list-style-type: none;
         padding-left:33px;
         padding-right:36px;
       }
-      #hero-logo-nav{
+      #logo-nav-wrapper{
           display:flex;
           justify-content:space-between;
           flex-flow: row;
       }
-      #hero-logo-nav h2{
+      #logo-nav-wrapper #logo{
           
         font-weight: bold;
         color: #FFFFFF;          
@@ -386,55 +378,21 @@ list-style-type: none;
         font-size: 14px;
         line-height: 21px;
       }
-      #hero-logo-nav h2 #dot{
-      
-      color: #F8885A;       
+      #logo-nav-wrapper #logo #dot{
+        color: #F8885A;       
         font-size: 36px;
         line-height: 54px;
       }
-      #hero-logo-nav a{
-          text-decoration: none;
-      }
-      nav{
-         display:none;
-          
-       }
-      nav ul{
-          
-         
-      }
-      nav li{
-         
-          
-      }
-      nav li:last-child{
-          
-      }
-
-      /* #room{
-          position:relative;
-          
-      }
-      #room:after{
-          content: '';
-          width: 53px;
-          height: 3px;
-          display: block;
-          background-color:#F8885A;
-          position:absolute;
-          left:6px;
       
-      }
-      nav li a{
-          color: #FCFCFC;
-          display:block;
-          text-decoration: none;
-      }*/
+     /* nav styling start */
+
+
+
+      /* nav styling ends */
+
       #hero-title{
       margin-top:64px;
-      
-
-        font-weight: bold;
+       font-weight: bold;
         font-size: 18px;
         line-height: 27px;
         text-align: center;
@@ -566,7 +524,7 @@ list-style-type: none;
         color: rgba(255, 255, 255, 0.73);
         margin-bottom:34px;
     }
-    .btn-footer{
+    .btn-cta{
               
         font-weight: 500;
         font-size: 13px;
