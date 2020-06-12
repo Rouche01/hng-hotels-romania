@@ -10,7 +10,8 @@ a,button{
     cursor: pointer;
 }
 .container{
-    
+    width:1440px;
+    overflow-x:hidden;
     background-color: #FFFFFF;
 }  
 /* Header styling start */
@@ -357,8 +358,11 @@ list-style-type: none;
     }
    /*  footer styling ends */
 
-@media screen and (max-width:415px){
-
+@media screen and (max-width:414px){
+.container{
+    width:414px;
+    overflow-x:hidden;
+}
     header{
         background-image:linear-gradient(rgba(0, 0, 0, 0.63),rgba(0, 0, 0, 0.63)),url("../images/hero\ image.jpg");  
         background-position: center;
@@ -370,6 +374,7 @@ list-style-type: none;
         padding-right:36px;
       }
       #logo-nav-wrapper{
+          
           display:flex;
           justify-content:space-between;
           flex-flow: row;
