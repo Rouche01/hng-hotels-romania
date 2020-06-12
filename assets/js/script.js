@@ -21,3 +21,15 @@ mobileMenu.addEventListener('click', function () {
     mainNav.classList.toggle('menu-popped')
     console.log(mainNav)
 })
+
+const navMenuList = document.querySelectorAll('.main-nav a');
+
+window.addEventListener('DOMContentLoaded', () => {
+    let url = window.location.href;
+    navMenuList.forEach( (navMenu) => {
+        if(url === (navMenu.href)) {
+            console.log(navMenu);
+            navMenu.className += " active-menu";
+        }
+    })
+})

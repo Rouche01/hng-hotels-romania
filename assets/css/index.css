@@ -50,6 +50,15 @@ nav .logo a span {
     color: #fff;
 }
 
+.active-menu:after {
+    content: ' ';
+    height: 3px;
+    width: 56px;
+    background-color: #F8885A;
+    display: block;
+    margin: 0 auto;
+}
+
 .main-nav li:first-child a {
     margin-left: 0px;
 }
@@ -161,7 +170,8 @@ nav .logo a span {
 #inner-tour .input-box .box-content {
     width: 80%;
     margin: 0 auto;
-    padding-top: 20%;
+    padding-top: 24%;
+    position: relative;
 }
 
 #inner-tour .input-box label {
@@ -170,7 +180,9 @@ nav .logo a span {
     display: block;
     text-transform: uppercase;
     font-size: 14px;
-    align-content: flex-start;
+    /* align-content: flex-start; */
+    position: absolute;
+    top: 44px;
 }
 
 #inner-tour .input-box input {
@@ -199,10 +211,25 @@ nav .logo a span {
     font-weight: 600;
     color: #F8885A;
     width: 100%;
+    background: url(../images/dropdown.svg); 
+    background-repeat: no-repeat;
+    background-size: 1.2rem auto, 100%;
+    background-position: right 7px top 50%, 0 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 #inner-tour .input-box select:focus {
     border: none;
+    outline: none;
+}
+
+#inner-tour .input-box input::-webkit-calendar-picker-indicator { 
+    background: url(../images/dropdown.svg); 
+    background-repeat: no-repeat;
+    background-size: 1.3rem auto, 100%;
+    background-position: right 7px top 50%, 0 0;
     outline: none;
 }
 
@@ -709,6 +736,10 @@ footer .inner-content .major-footer ul li {
     nav .main-nav li a {
         margin-left: 0;
         font-size: 1.3rem;
+    }
+
+    .active-menu:after {
+        content: none;
     }
 
     nav .logo a {
