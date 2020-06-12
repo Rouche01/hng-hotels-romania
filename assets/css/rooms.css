@@ -184,23 +184,38 @@ color: #FFFFFF;
  margin-top:275px; 
   
     }
-
-.deluxe-room:after{
-	content:"";
-	display:table;
-	clear:both;
+.deluxe-room{
+    background-color:rgb(255, 243, 238);
 }
-/* Rotated background styling */
-.deluxe{
-    width:1800.4px;
-    height: 1067.27px;
+ .deluxe-room:before{
+    top: -13px;
+    transform: skewY(6deg);
+    transform-origin: 100% 0;
+    height: 20%;
+    background-color:rgb(255, 243, 238);
+    content: "";
+    display: block;
+    left: 0;
     position: absolute;
-    transform: rotate(7.87deg);
-    background: rgba(248, 136, 90, 0.07);
-    left: -100px;
-    top:1414.26px;
- 
-} /* Rotated background styling ends */
+    right: 0;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+} 
+.deluxe-room:after{
+    bottom: 0px;
+    transform: skewY(6deg);
+    transform-origin: 0%;
+    height: 20%;
+    background-color:rgb(255, 243, 238);
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+}
+
 
 .deluxe-details{
     position: absolute;    
@@ -211,7 +226,7 @@ color: #FFFFFF;
     background: #FFFFFF;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.25);
     padding: 46px 0 81px 65px;
-    z-index:1;
+    z-index:3;
 }
 
 .deluxe-bg{
@@ -225,7 +240,7 @@ color: #FFFFFF;
    
     margin:0;
     padding:0;
-   
+    z-index:2;
     right:63px; 
 }
 
@@ -416,9 +431,23 @@ list-style-type: none;
         padding-right:36px;
         margin-top:125px;
         background-color: #FFFFFF;
-        height:525px;
+         height:525px; 
         
     }
+    .deluxe-room:before{
+        top: -50px;
+        transform: skewY(6deg);
+        transform-origin: 100% 0;
+        height: 20%;
+        background-color:rgb(255, 243, 238);
+        content: "";
+        display: block;
+        left: 0;
+        position: absolute;
+        right: 0;
+        z-index: 1;
+        -webkit-backface-visibility: hidden;
+    } 
     .standard-bg,.deluxe-bg,.luxurius-bg{
         position: static;
         width: 345px;
@@ -431,11 +460,13 @@ list-style-type: none;
     .standard-details,.deluxe-details,.luxurius-details{
         position: static;        
         width: 345px;   
-        
         box-shadow:none;
         border:none;
         background:none;
         padding: 0;
+    }
+    .deluxe-room{
+        background-color:rgb(255, 243, 238);
     }
 
     .room-type{
@@ -492,7 +523,7 @@ list-style-type: none;
     line-height: 21px;
     color: #FFFFFF;
     }
-    .deluxe{
+    /* .deluxe{
         z-index:1;
         position: absolute;
         width: 870.92px;
@@ -503,7 +534,7 @@ list-style-type: none;
         background: rgba(248, 136, 90, 0.07);
         transform: rotate(7.87deg);
 
-    }
+    } */
 
 
     .call-to-action{
