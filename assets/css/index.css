@@ -1042,6 +1042,10 @@ footer .inner-content .major-footer ul li {
         margin: 0px 12px 0.5rem 0;
     }
 
+    #rooms:after, .deluxe-room-page:after {
+        bottom: -25px;
+    }
+
     #rooms .inner-content .slider-indicators > a:active, #facilities .inner-content .slider-indicators > a:active, #testimonials .inner-content .slider-indicators > a:active {
         background: #EB4501;
     }

@@ -244,8 +244,12 @@ margin-bottom:40px;
         color: #F8885A;
         }
 
-    .standard-room .room-price {
-        top: 140px;
+    /* .standard-room .room-price {
+        top: 190px;
+    } */
+
+    .deluxe-room-page .room-price {
+        top: 240px;
     }
 
     .btn-book-now{
