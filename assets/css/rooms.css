@@ -33,17 +33,17 @@ body{
     top:80px;
     right:63px;
     width: 576px;
-    height: 450px;
+    /* height: 450px; */
     background: #FFFFFF;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.25);
-    padding: 26px 0 81px 45px;
+    padding: 40px 0 40px 45px;
     box-sizing: border-box;
 }
 
 .room-type{
     font-style: normal;
     font-weight: normal;
-    font-size: 36px;
+    font-size: 32px;
     /* line-height: 54px; */
     color: rgba(0, 0, 0, 0.9);
     margin-bottom:37px;
@@ -62,20 +62,19 @@ body{
 
 .room-description{
 width: 483px;
-height: 144px;
 font-style: normal;
 font-weight: normal;
-font-size: 24px;
-line-height: 36px;
+font-size: 20px;
+line-height: 32px;
 color: rgba(0, 0, 0, 0.6);
-margin-bottom:21px;
+margin-bottom:40px;
 }
 
 .room-price{
     font-style: normal;
     font-weight: normal;
-    font-size: 36px;
-    line-height: 54px;
+    font-size: 32px;
+    line-height: 50px;
     color: #F8885A;
     margin-bottom:15px;
 
@@ -123,10 +122,10 @@ margin-bottom:21px;
     left:102px;
     top:160px;
     width: 576px;
-    height: 450px;
+    /* height: 450px; */
     background: #FFFFFF;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.25);
-    padding: 26px 0 81px 45px;
+    padding: 40px 0 40px 45px;
     z-index:1;
 }
 

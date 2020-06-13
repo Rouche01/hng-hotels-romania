@@ -170,9 +170,9 @@ nav .logo a span {
 }
 
 #inner-tour .input-box .box-content {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
-    padding-top: 24%;
+    padding-top: 28%;
     position: relative;
 }
 
@@ -184,16 +184,35 @@ nav .logo a span {
     font-size: 14px;
     /* align-content: flex-start; */
     position: absolute;
-    top: 44px;
+    top: 55px;
+    line-height: 20px;
 }
 
 #inner-tour .input-box input {
     background: none;
     border: none;
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
-    color: #F8885A;
+    color: rgba(248, 136, 90, 0);
+    display: block;
+}
+
+#inner-tour .input-box input[type="submit"] {
+    cursor: pointer;
+}
+
+#inner-tour .input-box input[type='date'] {
+    width: 100%;
+}
+
+#inner-tour .input-box .formatted-check-in-date, #inner-tour .input-box .formatted-check-out-date {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(248, 136, 90);
+    position: absolute;
+    top: 70%;
 }
 
 #inner-tour .input-box:last-child input {
@@ -209,14 +228,15 @@ nav .logo a span {
     background: none;
     border: none;
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     color: #F8885A;
     width: 100%;
+    /* padding-left: 10px; */
     background: url(../images/dropdown.svg); 
     background-repeat: no-repeat;
     background-size: 1.2rem auto, 100%;
-    background-position: right 7px top 50%, 0 0;
+    background-position: right 5px top 50%, 0 0;
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
@@ -230,8 +250,8 @@ nav .logo a span {
 #inner-tour .input-box input::-webkit-calendar-picker-indicator { 
     background: url(../images/dropdown.svg); 
     background-repeat: no-repeat;
-    background-size: 1.3rem auto, 100%;
-    background-position: right 7px top 50%, 0 0;
+    background-size: 1.2rem auto, 100%;
+    background-position: right 4px top 50%, 0 0;
     outline: none;
 }
 
@@ -244,7 +264,7 @@ nav .logo a span {
 }
 
 #about-us .inner-content h4, #rooms .inner-content h4, #facilities .inner-content h4, #testimonials .inner-content h4 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
 }
 
@@ -257,7 +277,7 @@ nav .logo a span {
 }
 
 #about-us .inner-content h2, #rooms .inner-content h2, #facilities .inner-content h2, #testimonials .inner-content h2 {
-    font-size: 48px;
+    font-size: 40px;
     margin-top: 20px;
 }
 
@@ -281,11 +301,11 @@ nav .logo a span {
 
 #about-us .inner-content .about-us-content .sub-content p {
     color: rgba(0, 0, 0, 0.56);
-    font-size: 20px;
+    font-size: 18px;
 }
 
 #about-us .inner-content .about-us-content .sub-content a, #rooms .inner-content a, #facilities .inner-content a {
-    font-size: 24px;
+    font-size: 20px;
     color: #EB4501;
     text-decoration: none;
     display: inline-block;
@@ -332,7 +352,7 @@ nav .logo a span {
     padding-top: 0;
 }
 
-#rooms:before, .deluxe-room:before {
+#rooms:before, .deluxe-room-page:before {
     top: 0px;
     transform: skewY(6deg);
     transform-origin: 100% 0;
@@ -340,7 +360,7 @@ nav .logo a span {
     background-color:rgb(255, 243, 238);
 }
 
-#rooms:after, .deluxe-room:after {
+#rooms:after, .deluxe-room-page:after {
     bottom: 0;
     transform: skewY(6deg);
     transform-origin: 0%;
@@ -424,7 +444,7 @@ nav .logo a span {
     margin-top: -120px;
     left: 50px;
     color: #fff;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     z-index: 150;
 }
@@ -523,7 +543,7 @@ nav .logo a span {
     color: #fff;
     z-index: 150;
     margin-top: 40px;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 #facilities .inner-content .facilities-group .facility p:after {
@@ -556,7 +576,7 @@ nav .logo a span {
 }
 
 #testimonials .inner-content .testimonials-group .testimonial h5 {
-    font-size: 24px;
+    font-size: 22px;
     color: rgba(51, 55, 61, 0.82);
     font-weight: 600;
     text-align: center;
@@ -564,9 +584,14 @@ nav .logo a span {
 }
 
 #testimonials .inner-content .testimonials-group .testimonial p {
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     color: rgba(0, 0, 0, 0.6);
+    margin-top: 30px;
+}
+
+#testimonials .inner-content .testimonials-group .testimonial .personal-info p {
+    margin-top: 0;
 }
 
 #testimonials .inner-content .testimonials-group .testimonial .personal-info {
@@ -586,7 +611,7 @@ nav .logo a span {
 
 #testimonials .inner-content .testimonials-group .testimonial .personal-info p {
     color: #33373D;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     margin-left: 30px
 }
@@ -622,13 +647,13 @@ nav .logo a span {
 }
 
 #sub-footer h2 {
-    font-size: 36px;
+    font-size: 32px;
     color: #fff;
     text-align: center;
 }
 
 #sub-footer p {
-    font-size: 18px;
+    font-size: 17px;
     color: #fff;
     text-align: center;
     width: 50%;
@@ -638,7 +663,7 @@ nav .logo a span {
 #sub-footer button {
     margin-top: 50px;
     padding: 23px 46px;
-    font-size: 18px;
+    font-size: 17px;
     background: linear-gradient(180deg, #F8885A 0%, #EB4501 100%);
     color: #fff;
     cursor: pointer;
@@ -650,7 +675,7 @@ footer .inner-content {
 }
 
 footer .inner-content  hr {
-    border: 2px solid rgba(0,0,0, 0.12);
+    border: 1px solid rgba(0,0,0, 0.12);
     margin-top: 40px;
 }
 
@@ -669,7 +694,7 @@ footer .inner-content .major-footer .footer-logo {
 }
 
 footer .inner-content .major-footer .copyright {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
 }
 
@@ -877,6 +902,10 @@ footer .inner-content .major-footer ul li {
     #inner-tour .input-box:last-child:after {
         content: none;
         margin: 0;
+    }
+
+    #inner-tour .input-box .formatted-check-in-date, #inner-tour .input-box .formatted-check-out-date {
+        display: none;
     }
 
     #inner-tour .input-box:last-child {
