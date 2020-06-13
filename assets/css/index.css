@@ -348,7 +348,7 @@ nav .logo a span {
     background-color:rgb(255, 243, 238);
 }
 
-#rooms::before, #rooms::after, .deluxe-room:after, .deluxe-room::before {
+#rooms::before, #rooms::after, .deluxe-room-page:after, .deluxe-room-page:before {
     /* background: inherit; */
     content: "";
     display: block;
@@ -750,6 +750,7 @@ footer .inner-content .major-footer ul li {
 
     nav .logo a span {
         font-size: 36px;
+        font-family: poppins;
     }
 
     nav .burger-menu {
@@ -1044,7 +1045,7 @@ footer .inner-content .major-footer ul li {
     #rooms .inner-content .room-gallery-mobile > div, #facilities .inner-content .facilities-group-mobile .facility, #testimonials .inner-content .testimonials-group .testimonial {
         flex-shrink: 0;
         scroll-snap-align: start;
-        transform-origin: center left;
+        transform-origin: center center;
         transform: scale(1);
         transition: transform 0.5s;
         margin-right: 20px;

@@ -94,7 +94,7 @@ margin-bottom:21px;
     cursor: pointer;
 }
 
-.deluxe-room{
+.deluxe-room-page {
     justify-content: right;
     position: relative;
     padding-right:63px;
@@ -164,7 +164,7 @@ margin-bottom:21px;
 }
 
 @media screen and (max-width: 600px) {
-    .standard-room,.luxurius-room,.deluxe-room{
+    .standard-room,.luxurius-room,.deluxe-room-page{
         position:relative;
         display:flex;
         flex-flow:column;
@@ -225,23 +225,24 @@ margin-bottom:21px;
     
     }
 
-    .deluxe-room {
+    .deluxe-room-page {
         flex-direction: column-reverse;
     }
 
     .room-price{
-    position:absolute;
-    width: 137px;
-    height: 66px;
-    left: 32%;
-    top: 190px;
-    padding:20px 12px 19px  12px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 27px;
-    color: #F8885A;
+        position:absolute;
+        width: 145px;
+        height: 66px;
+        text-align: center;
+        left: 32%;
+        top: 190px;
+        padding:20px 12px 19px  12px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #F8885A;
         }
 
     .standard-room .room-price {
@@ -257,14 +258,14 @@ margin-bottom:21px;
     line-height: 21px;
     color: #FFFFFF;
     }
-    .deluxe-room:before {
-        top: -65px !important;
+    .deluxe-room-page:before {
+        top: -60px !important;
         transform: skewY(6deg);
         transform-origin: 100% 0;
         height: 20%;
         background-color:rgb(255, 243, 238);
     }
-    .deluxe-room{
+    .deluxe-room-page {
         background-color:rgb(255, 243, 238);
         margin-top: 100px !important;
     }
